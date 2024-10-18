@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
-import { PlusCircle, Send, ThumbsUp, ThumbsDown, RotateCcw, Copy, ArrowDown, Image, BarChart2, Lightbulb, FileText, ChevronDown, Check, Menu, Plus, ChevronLeft, ChevronRight, Paperclip, Mic, PanelLeftClose, PenSquare, Hexagon, X } from "lucide-react"
+import { Send, ThumbsUp, ThumbsDown, RotateCcw, Copy, ArrowDown, Image as ImageIcon, BarChart2, Lightbulb, FileText, ChevronDown, Check, Menu, Paperclip, Mic, PanelLeftClose, PenSquare, Hexagon } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Switch } from "@/components/ui/switch"
@@ -435,7 +435,7 @@ export function ChatInterfaceComponent() {
                   className="flex flex-col items-center justify-center gap-2 p-6 rounded-md bg-secondary hover:bg-secondary-hover"
                   style={{ color: colors.text }}
                 >
-                  <Image className="h-8 w-8" />
+                  <ImageIcon className="h-8 w-8" aria-hidden="true" />
                   Create image
                 </Button>
                 <Button 
